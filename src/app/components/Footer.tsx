@@ -42,7 +42,7 @@ export function Footer() {
               <a href="#" className="group w-10 h-10 flex items-center justify-center rounded-full bg-[#1D1D1F]/5 text-[#1D1D1F] hover:bg-[#0071E3] hover:text-white hover:scale-110 transition-all duration-300 overflow-hidden">
                 <ImageWithFallback src={wechatIcon} alt="WeChat" className="w-5 h-5 object-contain transition-all duration-300 group-hover:brightness-0 group-hover:invert" />
               </a>
-              <a href="mailto:contact@airbit.so" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1D1D1F]/5 text-[#1D1D1F] hover:bg-[#0071E3] hover:text-white hover:scale-110 transition-all duration-300">
+              <a href="mailto:contact@tlin.cn" className="w-10 h-10 flex items-center justify-center rounded-full bg-[#1D1D1F]/5 text-[#1D1D1F] hover:bg-[#0071E3] hover:text-white hover:scale-110 transition-all duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
