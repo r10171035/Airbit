@@ -34,7 +34,6 @@ export function Navigation() {
     {
       category: '插件',
       items: [
-        { name: '全部插件', pending: false },
         { name: '插件包', pending: true },
         { name: '第三方插件', pending: true },
       ]
@@ -50,7 +49,7 @@ export function Navigation() {
       category: '合作伙伴',
       items: [
         { name: '查找伙伴', pending: true },
-        { name: '成为伙伴', pending: true },
+        { name: '成为伙伴', pending: false, href: '#/partner' },
       ]
     }
   ];
@@ -58,7 +57,7 @@ export function Navigation() {
   const resources = [
     { name: '文档 4.x', href: '#' },
     { name: '协议许可', href: '#' },
-    { name: '公司介绍', href: '#' },
+    { name: '公司介绍', href: '#/company' },
     { name: '联系我们', href: '#/contact' },
   ];
 
@@ -152,7 +151,7 @@ export function Navigation() {
                             {category.items.map((item, itemIdx) => (
                               <a
                                 key={itemIdx}
-                                href="#"
+                                href={item.href || '#'}
                                 className={`group block ${item.pending ? 'cursor-not-allowed opacity-60' : ''}`}
                                 onClick={(e) => item.pending && e.preventDefault()}
                               >
@@ -216,12 +215,9 @@ export function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4 text-xs font-medium">
-            <button className="text-[#1D1D1F] hover:text-[#0071E3] transition-colors">
-              联系销售
-            </button>
-            <button className="px-4 py-1.5 bg-[#0071E3] text-white rounded-full hover:bg-[#0077ED] transition-colors">
-              免费试用
-            </button>
+            <a href="#/contact" className="px-4 py-1.5 bg-[#0071E3] text-white rounded-full hover:bg-[#0077ED] transition-colors">
+              联系我们
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -260,7 +256,7 @@ export function Navigation() {
                     <div key={cat.category} className="mb-3">
                       <div className="text-xs text-[#86868B] mb-1">{cat.category}</div>
                       {cat.items.map(item => (
-                        <a key={item.name} href="#" className={`block py-1 pl-2 ${item.pending ? 'text-[#86868B]' : 'text-[#1D1D1F]'}`}>
+                        <a key={item.name} href={item.href || '#'} className={`block py-1 pl-2 ${item.pending ? 'text-[#86868B]' : 'text-[#1D1D1F]'}`}>
                           {item.name} {item.pending && '(即将推出)'}
                         </a>
                       ))}
@@ -270,18 +266,15 @@ export function Navigation() {
                  <div className="py-2 border-b border-[#F5F5F7]">
                   <div className="text-[#86868B] text-xs mb-2 uppercase tracking-wider">资料</div>
                   {resources.map(item => (
-                    <a key={item.name} href="#" className="block py-1 pl-2 text-[#1D1D1F]">{item.name}</a>
+                    <a key={item.name} href={item.href || '#'} className="block py-1 pl-2 text-[#1D1D1F]">{item.name}</a>
                   ))}
                 </div>
                 <a href="#" className="py-3 text-[#1D1D1F]">定价</a>
                 
                 <div className="flex flex-col gap-3 pt-4 border-t border-[#F5F5F7] mt-2">
-                  <button className="w-full py-2.5 text-[#1D1D1F] bg-[#F5F5F7] rounded-lg text-sm font-medium">
-                    联系销售
-                  </button>
-                  <button className="w-full py-2.5 bg-[#0071E3] text-white rounded-lg text-sm font-medium">
-                    免费试用
-                  </button>
+                  <a href="#/contact" className="w-full py-2.5 bg-[#0071E3] text-white rounded-lg text-sm font-medium text-center block">
+                    联系我们
+                  </a>
                 </div>
               </div>
             </motion.div>

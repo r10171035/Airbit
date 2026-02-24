@@ -104,10 +104,10 @@ export function DeveloperExperience() {
               立即开始
             </a>
             <a 
-              href="#" 
+              href="#/contact" 
               className="px-8 py-3.5 rounded-full bg-white text-[#1D1D1F] border border-[#D2D2D7] font-medium hover:bg-gray-50 transition-all transform hover:scale-105 shadow-sm hover:shadow-md min-w-[140px]"
             >
-              联系销售
+              联系我们
             </a>
           </div>
         </motion.div>

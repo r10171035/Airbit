@@ -14,6 +14,8 @@ import { AirBitGuardrailsPage } from '@/app/components/AirBitGuardrailsPage';
 import { AirBitAIOPage } from '@/app/components/AirBitAIOPage';
 
 import { ContactPage } from '@/app/components/ContactPage';
+import { CompanyPage } from '@/app/components/CompanyPage';
+import { PartnerPage } from '@/app/components/PartnerPage';
 
 export default function App() {
   const [route, setRoute] = useState('');
@@ -64,6 +66,12 @@ export default function App() {
       ) : route === '#/contact' ? (
         // Contact Page
         <ContactPage />
+      ) : route === '#/company' ? (
+        // Company Page
+        <CompanyPage />
+      ) : route === '#/partner' ? (
+        // Partner Page
+        <PartnerPage />
       ) : (
         // Home Page
         <>

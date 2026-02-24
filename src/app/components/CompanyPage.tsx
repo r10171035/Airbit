@@ -1,0 +1,222 @@
+import { motion } from 'motion/react';
+import { Network, Layers, Bot, ShieldCheck, Activity, Building2, Briefcase, ShoppingBag, Landmark, CircuitBoard } from 'lucide-react';
+
+export function CompanyPage() {
+  return (
+    <div className="min-h-screen bg-white font-sans text-[#1D1D1F] pt-20">
+      
+      {/* Hero Section */}
+      <section className="relative pt-20 pb-16 lg:pt-32 lg:pb-24 px-6 text-center overflow-hidden">
+        <div className="max-w-[800px] mx-auto relative z-10">
+          <motion.div
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight">
+              厦门天临科技有限公司
+            </h1>
+            <p className="text-xl text-[#86868B] font-light max-w-2xl mx-auto leading-relaxed">
+              构建企业级数字底座，连接智能未来
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Company Overview */}
+      <section className="max-w-[1200px] mx-auto px-6 mb-32">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+           <motion.div 
+             initial={{ opacity: 0, x: -20 }}
+             whileInView={{ opacity: 1, x: 0 }}
+             viewport={{ once: true }}
+             transition={{ duration: 0.6 }}
+             className="space-y-6"
+           >
+              <h2 className="text-3xl font-bold tracking-tight">公司概览</h2>
+              <div className="space-y-4 text-lg text-[#424245] leading-relaxed">
+                <p>
+                  厦门天临科技有限公司是一家领先的企业级 API 与 AI 基础设施解决方案提供商。我们致力于帮助企业解决从传统微服务治理到大模型应用落地（LLM Ops）全过程中的连接、管理、安全与观测难题。
+                </p>
+                <p>
+                  通过打造现代化的数字底座，天临科技赋能企业在数字化与智能化转型中实现安全、高效、可控的业务增长。
+                </p>
+              </div>
+           </motion.div>
+           <motion.div
+             initial={{ opacity: 0, scale: 0.95 }}
+             whileInView={{ opacity: 1, scale: 1 }}
+             viewport={{ once: true }}
+             transition={{ duration: 0.6, delay: 0.2 }}
+             className="relative h-[400px] rounded-3xl overflow-hidden bg-[#F5F5F7]"
+           >
+              {/* Abstract tech background or office image */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center">
+                 <div className="w-full h-full opacity-50 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center mix-blend-multiply"></div>
+              </div>
+           </motion.div>
+        </div>
+      </section>
+
+      {/* Core Competitiveness: AirBit Product Matrix */}
+      <section className="bg-[#F5F5F7] py-24">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">核心竞争力：AirBit 产品矩阵</h2>
+            <p className="text-[#86868B] max-w-2xl mx-auto">
+              依托自主研发的 Airbit 产品矩阵，我们为企业构建了一套完整的数字生态系统，确保 AI 能力真正转化为生产力。
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Card 1: AirBit Apis */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="w-12 h-12 bg-blue-100 text-[#0071E3] rounded-2xl flex items-center justify-center mb-6">
+                <Network className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">AirBit Apis</h3>
+              <p className="text-[#86868B] text-sm leading-relaxed">
+                高性能 API 网关。作为云原生的动态 API 网关，它负责接管进入企业的所有流量，并处理身份认证、负载均衡与限流熔断，如同把控企业数字主干道的“全能交警”。
+              </p>
+            </motion.div>
+
+            {/* Card 2: AirBit Eips */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <Layers className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">AirBit Eips</h3>
+              <p className="text-[#86868B] text-sm leading-relaxed">
+                企业集成框架。基于企业集成模式的框架，拥有超过 300 个组件，如同“万能胶水”般将企业内各种异构系统与接口无缝粘合，打破数据孤岛。
+              </p>
+            </motion.div>
+
+            {/* Card 3: AirBit AI Gateway */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                <Bot className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">AirBit AI Gateway</h3>
+              <p className="text-[#86868B] text-sm leading-relaxed">
+                AI 流量管家。位于企业应用与大模型之间的智能中间件，通过统一接口解决厂商锁定问题，并利用语义缓存大幅降低昂贵的 Token 成本。
+              </p>
+            </motion.div>
+
+            {/* Card 4: AirBit Guardrails */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow lg:col-span-1.5"
+            >
+              <div className="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">AirBit Guardrails</h3>
+              <p className="text-[#86868B] text-sm leading-relaxed">
+                AI 安全护栏。这是一个可编程的规则引擎，通过强制规则拦截越狱攻击和过滤敏感内容，充当企业 AI 的“严苛合规官”，确保模型输出安全可控。
+              </p>
+            </motion.div>
+
+            {/* Card 5: AirBit AIO */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow lg:col-span-1.5"
+            >
+              <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                <Activity className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">AirBit AIO</h3>
+              <p className="text-[#86868B] text-sm leading-relaxed">
+                AI 可观测性与工程平台。面向大模型应用的 APM 与评测平台，提供全链路追踪，让企业清晰掌握运行成本与数据流向。支持版本控制与 Prompt 优化。
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customers Section */}
+      <section className="py-24 max-w-[1200px] mx-auto px-6">
+         <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">行业标杆与客户信任</h2>
+            <p className="text-[#86868B] max-w-2xl mx-auto">
+               凭借卓越的技术实力与交付保障，我们成功助力众多行业龙头企业构建数字核心壁垒。
+            </p>
+         </div>
+
+         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Fashion */}
+            <div className="space-y-4">
+               <div className="flex items-center gap-3 mb-2 text-[#0071E3]">
+                  <ShoppingBag className="w-5 h-5" />
+                  <h3 className="font-semibold">时尚鞋服</h3>
+               </div>
+               <div className="bg-[#F5F5F7] rounded-2xl p-6 space-y-3">
+                  <div className="font-medium text-[#1D1D1F]">安踏集团</div>
+                  <div className="font-medium text-[#1D1D1F]">特步集团</div>
+                  <div className="font-medium text-[#1D1D1F]">七匹狼集团</div>
+               </div>
+            </div>
+
+            {/* FMCG */}
+            <div className="space-y-4">
+               <div className="flex items-center gap-3 mb-2 text-indigo-600">
+                  <Briefcase className="w-5 h-5" />
+                  <h3 className="font-semibold">快消实业</h3>
+               </div>
+               <div className="bg-[#F5F5F7] rounded-2xl p-6 space-y-3">
+                  <div className="font-medium text-[#1D1D1F]">达利集团</div>
+                  <div className="font-medium text-[#1D1D1F]">海峡石化</div>
+               </div>
+            </div>
+
+            {/* Gov/City Investment */}
+            <div className="space-y-4">
+               <div className="flex items-center gap-3 mb-2 text-purple-600">
+                  <Landmark className="w-5 h-5" />
+                  <h3 className="font-semibold">国资城投</h3>
+               </div>
+               <div className="bg-[#F5F5F7] rounded-2xl p-6 space-y-3">
+                  <div className="font-medium text-[#1D1D1F]">苏州城投</div>
+                  <div className="font-medium text-[#1D1D1F]">河南投资</div>
+               </div>
+            </div>
+
+            {/* Tech */}
+            <div className="space-y-4">
+               <div className="flex items-center gap-3 mb-2 text-orange-600">
+                  <CircuitBoard className="w-5 h-5" />
+                  <h3 className="font-semibold">科技创新</h3>
+               </div>
+               <div className="bg-[#F5F5F7] rounded-2xl p-6 space-y-3">
+                  <div className="font-medium text-[#1D1D1F]">科拓股份</div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+    </div>
+  );
+}
