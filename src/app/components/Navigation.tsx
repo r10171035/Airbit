@@ -210,7 +210,7 @@ export function Navigation() {
               </AnimatePresence>
             </div>
 
-            <a href="#" className="text-[#1D1D1F] hover:text-[#0071E3] transition-colors text-[16px]">定价</a>
+            <a href="#/pricing" className="text-[#1D1D1F] hover:text-[#0071E3] transition-colors text-[16px]">定价</a>
           </div>
 
           {/* CTA Buttons */}
@@ -269,7 +269,7 @@ export function Navigation() {
                     <a key={item.name} href={item.href || '#'} className="block py-1 pl-2 text-[#1D1D1F]">{item.name}</a>
                   ))}
                 </div>
-                <a href="#" className="py-3 text-[#1D1D1F]">定价</a>
+                <a href="#/pricing" className="py-3 text-[#1D1D1F]">定价</a>
                 
                 <div className="flex flex-col gap-3 pt-4 border-t border-[#F5F5F7] mt-2">
                   <a href="#/contact" className="w-full py-2.5 bg-[#0071E3] text-white rounded-lg text-sm font-medium text-center block">

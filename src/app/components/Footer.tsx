@@ -1,6 +1,6 @@
 import { Github } from 'lucide-react';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
-import airbitLogo from "figma:asset/6c3502d5632d717131854fb34b945b3865ccc98f.png";
+import logoSvg from "../../imports/logo.svg";
 import wechatIcon from "figma:asset/7695679c5ee873b4251081de7d0f0ba00b4a77f3.png";
 
 function WeChat(props: React.SVGProps<SVGSVGElement>) {
@@ -29,7 +29,7 @@ export function Footer() {
           <div className="lg:col-span-4 flex flex-col items-start">
             <div className="flex items-center gap-2 mb-6">
                <ImageWithFallback 
-                 src={airbitLogo} 
+                 src={logoSvg} 
                  alt="AirBit Logo" 
                  className="w-8 h-8 object-contain" 
                />

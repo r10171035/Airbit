@@ -16,6 +16,7 @@ import { AirBitAIOPage } from '@/app/components/AirBitAIOPage';
 import { ContactPage } from '@/app/components/ContactPage';
 import { CompanyPage } from '@/app/components/CompanyPage';
 import { PartnerPage } from '@/app/components/PartnerPage';
+import { PricingPage } from '@/app/components/PricingPage';
 
 export default function App() {
   const [route, setRoute] = useState('');
@@ -72,6 +73,9 @@ export default function App() {
       ) : route === '#/partner' ? (
         // Partner Page
         <PartnerPage />
+      ) : route === '#/pricing' ? (
+        // Pricing Page
+        <PricingPage />
       ) : (
         // Home Page
         <>
