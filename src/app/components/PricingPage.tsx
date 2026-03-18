@@ -45,7 +45,7 @@ export function PricingPage() {
         { name: '不限制数据量', tiers: [true, true, true] },
         { name: '为客户开发上层应用', tiers: [true, true, true] },
         { name: '在界面上使用自己的品牌信息', tiers: [false, true, true] },
-        { name: '服务数限制', tooltip: '指创建的独立逻辑服务单元，每一逻辑服务单元具有唯一 Service ID...', tiers: ['5', '订阅/买断', '订阅/买断'] },
+        { name: '服务数限制', tooltip: '服务”：指本软件创建的独立逻辑服务单元，每一逻辑服务单元具有唯一 Service ID，并具备独立的访问入口、上游目标地址、鉴权或配额策略之一，API 服务、AI 模型代理服务、MCP 工具服务及其他通过网关对外暴露的能力均视为服务单元，服务数量以系统后台“服务管理”统计为准。', tiers: ['5', '订阅/买断', '订阅/买断'] },
         { name: '私有化', tiers: [true, true, true] },
       ]
     },
@@ -53,11 +53,11 @@ export function PricingPage() {
       title: '架构',
       features: [
         { name: '插件化架构', tiers: [true, true, true] },
-        { name: '国产化支持', tiers: [false, '-', true] },
+        { name: '信创支持', tiers: [false, '-', true] },
         { name: '迁移和发布管理', tiers: [false, '-', true] },
         { name: '多应用', tiers: [true, true, true] },
         { name: '集群架构', tiers: [false, '-', true] },
-        { name: '遥测', tooltip: '权限校验、策略集成、敏感操作拦截\n调用日志、Trace、性能指标采集', tiers: [false, true, true] },
+        { name: '可观测', tooltip: '权限校验、策略集成、敏感操作拦截\n调用日志、Trace、性能指标采集', tiers: [true, true, true] },
       ]
     },
     {
