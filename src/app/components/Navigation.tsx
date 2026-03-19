@@ -9,6 +9,13 @@ export function Navigation() {
 
   const products = [
     {
+      category: '治理与运维',
+      items: [
+        { name: 'AirBit Guardrails', desc: '可编程安全护栏', href: '/airbit-guardrails' },
+        { name: 'AirBit AIO', desc: '全栈可观测平台', href: '/airbit-aio' },
+      ]
+    },
+    {
       category: '连接与集成',
       items: [
         { name: 'AirBit Apis', desc: '云原生动态网关', href: '/airbit-apis' },
@@ -23,10 +30,9 @@ export function Navigation() {
       ]
     },
     {
-      category: '治理与运维',
+      category: '企业级应用',
       items: [
-        { name: 'AirBit Guardrails', desc: '可编程安全护栏', href: '/airbit-guardrails' },
-        { name: 'AirBit AIO', desc: '全栈可观测平台', href: '/airbit-aio' },
+        { name: 'AirBit Portal', desc: '企业级 AI 业务统一门户', href: '/airbit-portal' },
       ]
     }
   ];

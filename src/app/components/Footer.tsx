@@ -62,6 +62,7 @@ export function Footer() {
             <div>
               <h4 className="text-[#1D1D1F] font-semibold mb-6 text-sm">产品</h4>
               <ul className="space-y-3 text-sm">
+                <li><Link to="/airbit-portal" className="text-[#6E6E73] hover:text-[#0071E3] transition-colors">AirBit Portal</Link></li>
                 <li><Link to="/airbit-ai-gateway" className="text-[#6E6E73] hover:text-[#0071E3] transition-colors">AirBit AI Gateway</Link></li>
                 <li><Link to="/airbit-guardrails" className="text-[#6E6E73] hover:text-[#0071E3] transition-colors">AirBit Guardrails</Link></li>
                 <li><Link to="/airbit-aio" className="text-[#6E6E73] hover:text-[#0071E3] transition-colors">AirBit AIO</Link></li>
